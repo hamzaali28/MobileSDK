@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  * *****************************************
+  ~  *  * Copyright (c) 2017.
+  ~  *  * Alexey Baskakov
+  ~  *  *
+  ~  *  * PropellerAds
+  ~  *  * http://propellerads.com
+  ~  *  *****************************************
+  -->
+
+<resources>
+    <color name="primary">#dacf48</color>
+    <color name="primaryDark">#a59e36</color>
+    <color name="accent">#3f3f40</color>
+    <color name="actionBarText">#fff</color>
+    <color name="text">#7f8080</color>
+    <color name="red">#f46d6d</color>
+</resources>

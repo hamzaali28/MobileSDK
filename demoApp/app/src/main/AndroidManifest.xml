@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  * *****************************************
+  ~  *  * Copyright (c) 2017.
+  ~  *  * Alexey Baskakov
+  ~  *  *
+  ~  *  * PropellerAds
+  ~  *  * http://propellerads.com
+  ~  *  *****************************************
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.propellerads.sample">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!--override facebook min sdk version 11 to our min sdk version-->
+    <uses-sdk tools:overrideLibrary="com.facebook.ads" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d4718a62733e32debdd4af08d5b01f82b3b41258"
+            />
+
+        <activity
+            android:name="com.propellerads.sample.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".samples.direct.DirectActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/direct_sample"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".samples.interstitial.InterstitialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/interstitial_sample"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".samples.interstitial.fragment.FragmentInterstitialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/fragment_interstitial_sample"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".samples.native_ad.NativeAdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/native_ad_sample"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".samples.native_ad.NativeAdRecyclerViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/native_ad_recycler_view_sample"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--AdMob-->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <!--AdMob end-->
+    </application>
+
+</manifest>

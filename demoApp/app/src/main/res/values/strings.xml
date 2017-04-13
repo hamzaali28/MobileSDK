@@ -1,0 +1,24 @@
+<!--
+  ~  * *****************************************
+  ~  *  * Copyright (c) 2017.
+  ~  *  * Alexey Baskakov
+  ~  *  *
+  ~  *  * PropellerAds
+  ~  *  * http://propellerads.com
+  ~  *  *****************************************
+  -->
+
+<resources>
+    <string name="app_name">PropellerAds Sample</string>
+    <string name="direct_sample">Direct sample</string>
+    <string name="interstitial_sample">Interstitial sample</string>
+    <string name="fragment_interstitial_sample">Fragment interstitial sample</string>
+    <string name="native_ad_sample">NativeAd sample</string>
+    <string name="native_ad_recycler_view_sample">NativeAd RecyclerView sample</string>
+    <string name="preload_icon">Preload icon</string>
+    <string name="preload_image">Preload image</string>
+    <string name="rating">★ %.1f</string>
+    <string name="init">init</string>
+    <string name="load">load</string>
+    <string name="show">show</string>
+</resources>

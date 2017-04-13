@@ -96,7 +96,7 @@ dependencies {
     }
 
     jarCompile fileTree(dir: 'sdkLibs', include: ['*.jar'])
-//    jCenterCompile 'com.propellerads:PropellerAdsSdk:1.0.0'
+    jCenterCompile 'com.propellerads:PropellerAdsSdk:1.0.0'
 
     compile 'com.android.support:appcompat-v7:25.0.0'
     compile 'com.android.support:recyclerview-v7:25.2.0'

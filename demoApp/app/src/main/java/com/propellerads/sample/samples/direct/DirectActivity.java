@@ -17,13 +17,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.propellerads.sample.R;
-import com.propellerads.sample.utiles.ToastHelper;
-import com.propellerads.sdk.common.ads.FailResponse;
 import com.propellerads.sdk.common.ads.direct.PropellerAdsDirect;
-import com.propellerads.sdk.common.ads.interstitial.IPropellerAdsInterstitialListener;
-import com.propellerads.sdk.common.ads.interstitial.PropellerAdsInterstitial;
-
-import java.util.Locale;
 
 public class DirectActivity extends AppCompatActivity {
     private static final int ZONE_ID = 1157584;

@@ -19,11 +19,8 @@ import android.view.View;
 
 import com.propellerads.sample.recycler.MenuAdapter;
 import com.propellerads.sample.recycler.MenuElement;
-import com.crashlytics.android.Crashlytics;
-import io.fabric.sdk.android.Fabric;
 import com.propellerads.sample.utiles.recycler_view.ItemClickSupport;
 import com.propellerads.sdk.common.ads.direct.PropellerAdsAuto;
-import com.propellerads.sdk.common.ads.direct.PropellerAdsDirect;
 
 public class MainActivity extends AppCompatActivity {
     Toolbar mToolBar;
@@ -33,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_main);
 
         mToolBar = (Toolbar) findViewById(R.id.toolbar);

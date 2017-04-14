@@ -23,8 +23,8 @@ import com.propellerads.sample.samples.native_ad.recycler.elements.NativeAdEleme
 import com.propellerads.sample.samples.native_ad.recycler.elements.NewsElement;
 import com.propellerads.sample.utiles.ToastHelper;
 import com.propellerads.sdk.common.ads.FailResponse;
-import com.propellerads.sdk.common.ads.native_ad.PropellerAdsNativeAd;
 import com.propellerads.sdk.common.ads.native_ad.IPropellerAdsNativeAdListener;
+import com.propellerads.sdk.common.ads.native_ad.PropellerAdsNativeAd;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

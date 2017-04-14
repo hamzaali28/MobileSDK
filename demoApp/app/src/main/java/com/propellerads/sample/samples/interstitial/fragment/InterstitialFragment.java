@@ -19,11 +19,10 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 import com.propellerads.sample.R;
+import com.propellerads.sample.utiles.ToastHelper;
 import com.propellerads.sdk.common.ads.FailResponse;
 import com.propellerads.sdk.common.ads.interstitial.IPropellerAdsInterstitialListener;
 import com.propellerads.sdk.common.ads.interstitial.PropellerAdsInterstitial;
-import com.propellerads.sdk.internal.server.response.impl.ErrorResponse;
-import com.propellerads.sample.utiles.ToastHelper;
 
 import java.util.Locale;
 

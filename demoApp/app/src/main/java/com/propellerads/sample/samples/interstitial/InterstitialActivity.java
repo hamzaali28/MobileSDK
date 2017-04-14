@@ -9,6 +9,7 @@
  */
 
 package com.propellerads.sample.samples.interstitial;
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -18,8 +19,8 @@ import android.widget.EditText;
 import com.propellerads.sample.R;
 import com.propellerads.sample.utiles.ToastHelper;
 import com.propellerads.sdk.common.ads.FailResponse;
-import com.propellerads.sdk.common.ads.interstitial.PropellerAdsInterstitial;
 import com.propellerads.sdk.common.ads.interstitial.IPropellerAdsInterstitialListener;
+import com.propellerads.sdk.common.ads.interstitial.PropellerAdsInterstitial;
 
 import java.util.Locale;
 

@@ -28,9 +28,6 @@
         android:name="android.hardware.location.gps"
         android:required="false" />
 
-    <!--override facebook min sdk version 11 to our min sdk version-->
-    <uses-sdk tools:overrideLibrary="com.facebook.ads" />
-
     <application>
         <activity
             android:name="com.propellerads.sdk.common.ads.interstitial.activity.PropellerAdsActivity"

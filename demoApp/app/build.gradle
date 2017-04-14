@@ -8,26 +8,8 @@
  *  *  *****************************************
  */
 
-buildscript {
-    repositories {
-        mavenCentral() // or jcenter()
-        maven { url 'https://maven.fabric.io/public' }
-    }
-
-    dependencies {
-        classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.5.5'
-        classpath 'io.fabric.tools:gradle:1.+'
-    }
-}
-
 apply plugin: 'com.android.application'
-apply plugin: 'com.getkeepsafe.dexcount'
 
-repositories {
-    maven { url 'https://maven.fabric.io/public' }
-}
-
-apply plugin: 'io.fabric'
 
 android {
     compileSdkVersion 25
@@ -90,10 +72,6 @@ dependencies {
     //You should compile your app against the Google Play Services Library in order to use
     //the Android Advertising ID instead of the device ID, as required by Google.
     compile 'com.google.android.gms:play-services-ads:8.4.0'
-
-    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
-        transitive = true;
-    }
 
     jarCompile fileTree(dir: 'sdkLibs', include: ['*.jar'])
     jCenterCompile 'com.propellerads:PropellerAdsSdk:1.0.0'

@@ -33,7 +33,7 @@ import com.propellerads.sdk.common.ads.native_ad.PropellerAdsNativeAd;
 import java.util.Locale;
 
 public class NativeAdActivity extends AppCompatActivity {
-    private static final int ZONE_ID = 934105;
+    private static final int ZONE_ID = 1175288;
     Toolbar mToolBar;
     View mButtonLoad;
     View mButtonShow;

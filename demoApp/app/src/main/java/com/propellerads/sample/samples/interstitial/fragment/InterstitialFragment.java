@@ -27,7 +27,7 @@ import com.propellerads.sdk.common.ads.interstitial.PropellerAdsInterstitial;
 import java.util.Locale;
 
 public class InterstitialFragment extends Fragment {
-    private static final int ZONE_ID = 605778;
+    private static final int ZONE_ID = 1175287;
     View mButtonLoad;
     View mButtonShow;
     EditText mEditText;

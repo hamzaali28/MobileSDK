@@ -21,6 +21,10 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!--for MRAID store picture end-->
 
+    <!--For PropellerAdsAuto-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--For PropellerAdsAuto end-->
+
     <uses-feature
         android:name="android.hardware.location"
         android:required="false" />
@@ -40,5 +44,25 @@
         <service
             android:name="com.propellerads.sdk.common.server.PropellerAdsService"
             android:exported="false" />
+
+        <!--For PropellerAdsAuto-->
+        <receiver
+            android:name="com.propellerads.sdk.common.ads.auto.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name="com.propellerads.sdk.common.ads.auto.TimeSetReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.propellerads.sdk.common.ads.auto.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <!--For PropellerAdsAuto end-->
     </application>
 </manifest>

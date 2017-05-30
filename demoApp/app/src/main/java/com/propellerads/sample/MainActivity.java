@@ -20,7 +20,7 @@ import android.view.View;
 import com.propellerads.sample.recycler.MenuAdapter;
 import com.propellerads.sample.recycler.MenuElement;
 import com.propellerads.sample.utiles.recycler_view.ItemClickSupport;
-import com.propellerads.sdk.common.ads.direct.PropellerAdsAuto;
+import com.propellerads.sdk.common.ads.auto.PropellerAdsAuto;
 
 public class MainActivity extends AppCompatActivity {
     Toolbar mToolBar;

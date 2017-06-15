@@ -101,11 +101,6 @@ public class NativeAdRecyclerViewActivity extends AppCompatActivity {
                 public void clickUrlOpened(PropellerAdsNativeAd nativeAd) {
                     ToastHelper.showToast(NativeAdRecyclerViewActivity.this, "clickUrlOpened");
                 }
-
-                @Override
-                public void expired(PropellerAdsNativeAd nativeAd) {
-                    ToastHelper.showToast(NativeAdRecyclerViewActivity.this, "expired");
-                }
             });
             propellerAdsNativeAd.load();
         }

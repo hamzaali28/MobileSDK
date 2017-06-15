@@ -118,12 +118,6 @@ public class InterstitialFragment extends Fragment {
             public void closed(PropellerAdsInterstitial interstitial) {
                 ToastHelper.showToast(getActivity(), "closed");
             }
-
-            @Override
-            public void expired(PropellerAdsInterstitial interstitial) {
-                ToastHelper.showToast(getActivity(), "expired");
-                loadInterstitial();
-            }
         });
     }
 

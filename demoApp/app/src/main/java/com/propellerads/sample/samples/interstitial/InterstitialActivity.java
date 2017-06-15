@@ -115,12 +115,6 @@ public class InterstitialActivity extends AppCompatActivity {
             public void closed(PropellerAdsInterstitial interstitial) {
                 ToastHelper.showToast(InterstitialActivity.this, "closed");
             }
-
-            @Override
-            public void expired(PropellerAdsInterstitial interstitial) {
-                ToastHelper.showToast(InterstitialActivity.this, "expired");
-                loadInterstitial();
-            }
         });
     }
 

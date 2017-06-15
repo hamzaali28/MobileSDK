@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        PropellerAdsAuto.init(this, 1157584);
+//        PropellerAdsAuto.init(this, 1157584);
     }
 }
 

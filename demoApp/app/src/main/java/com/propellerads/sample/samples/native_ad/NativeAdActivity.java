@@ -153,12 +153,6 @@ public class NativeAdActivity extends AppCompatActivity {
             public void clickUrlOpened(PropellerAdsNativeAd nativeAd) {
                 ToastHelper.showToast(NativeAdActivity.this, "clickUrlOpened");
             }
-
-            @Override
-            public void expired(PropellerAdsNativeAd nativeAd) {
-                ToastHelper.showToast(NativeAdActivity.this, "expired");
-                loadNativeAd();
-            }
         });
     }
 

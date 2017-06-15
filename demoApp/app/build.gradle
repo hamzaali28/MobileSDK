@@ -74,7 +74,7 @@ dependencies {
     compile 'com.google.android.gms:play-services-ads:8.4.0'
 
     jarCompile fileTree(dir: 'sdkLibs', include: ['*.jar'])
-    jCenterCompile 'com.propellerads:PropellerAdsSdk:1.0.5'
+    jCenterCompile 'com.propellerads:PropellerAdsSdk:1.0.6'
 
     compile 'com.android.support:appcompat-v7:25.2.0'
     compile 'com.android.support:recyclerview-v7:25.2.0'
